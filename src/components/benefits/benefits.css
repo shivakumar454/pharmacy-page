@@ -1,0 +1,155 @@
+.benefits {
+    height: auto; 
+    width: 95%;
+    margin-top: 40px;
+    padding: 20px; 
+  }
+  
+  .benefits span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; 
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .cards {
+    height: auto; 
+      display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;  
+    gap: 20px;
+  }
+  
+  .card1 {
+    height: 400px;
+    width: 300px;
+    border-radius: 10%;
+    border: 2px solid blue;
+    background: linear-gradient(to right, rgb(27, 105, 221), lightblue, rgb(27, 105, 221));
+    transition: transform 0.3s ease, flex-grow 0.3s ease;
+  }
+  
+  #mycard {
+    flex-grow: 0.1; 
+    transform: scale(1.1); 
+    background-color: #d0ebff;
+  }
+  
+  .card1 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .card1 h3 {
+    font-size: 1.8rem; 
+    text-align: center;
+    color: white;
+  }
+  
+  .card1 p {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    padding: 0 10px; 
+  }
+  
+  .card1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #e7f0ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    font-size: 20px; 
+    color: #4285f4;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .card1 {
+      height: 350px;
+      width: 250px;
+    }
+  
+    .card1 h3 {
+      font-size: 1.5rem;
+    }
+  
+    .card1 p {
+      font-size: 0.9rem;
+    }
+  
+    .arrow-button {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits span {
+      font-size: 2.5rem; 
+    }
+  
+    .card1 {
+      height: 320px;
+      width: 220px;
+    }
+  
+    .card1 h3 {
+      font-size: 1.2rem;
+    }
+  
+    .card1 p {
+      font-size: 0.8rem;
+    }
+  
+    .arrow-button {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits span {
+      font-size: 2rem;
+    }
+  
+    .cards {
+      flex-direction: column; 
+    }
+  
+    .card1 {
+      height: 280px;
+      width: 90%; 
+    }
+  
+    .card1 h3 {
+      font-size: 1rem;
+    }
+  
+    .card1 p {
+      font-size: 0.7rem;
+    }
+  
+    .arrow-button {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

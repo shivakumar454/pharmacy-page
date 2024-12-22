@@ -1,0 +1,125 @@
+.jobscourses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  height: auto; 
+  padding: 20px;
+  gap: 20px;
+}
+
+.jobs,
+.relatdcourses {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.jobs span,
+.relatdcourses span {
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  text-align: center;
+}
+
+.points-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.left-points,
+.right-points {
+  flex: 1;
+  max-width: 300px;
+  text-align: left; 
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .jobscourses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jobs,
+  .relatdcourses {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .points-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-points,
+  .right-points {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
+
+.ece {
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ece img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.ece p {
+  color: black;
+  text-align: center;
+}
+
+.star {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .ece {
+    max-width: 100%;
+  }
+
+  .ece img {
+    height: 50px;
+    width: 50px;
+  }
+}

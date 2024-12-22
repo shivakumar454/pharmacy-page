@@ -1,0 +1,152 @@
+.aboutcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.aboutcourse, .learn {
+    flex: 1 1 100%;
+    max-width: 100%;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .aboutcourse, .learn {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+.about {
+    /* border: 2px solid rgb(42, 136, 11); */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about span {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.course {
+    border: 2px solid gray;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.course span {
+    font-size: 1.8rem;
+    display: block;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.icon {
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle-input:checked + .dropdown-header .icon {
+    transform: rotate(180deg);
+}
+
+.learn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.learn1 {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid rgb(161, 163, 163);
+    background-color: white;
+    box-shadow: 0px 0px 30px rgb(107, 107, 215);
+    border-radius: 10%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.learn1 img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid brown;
+    margin: 0 auto;
+    display: block;
+}
+
+.sl {
+    background: linear-gradient(to right, rgb(27, 105, 221), lightblue, rgb(27, 105, 221));
+    color: white;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 5px 20px;
+}
+
+.details {
+    border-bottom: 1px solid black;
+    font-size: 20 px;
+    margin-top: 10px;
+}
